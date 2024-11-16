@@ -1,29 +1,90 @@
+<!-- Until we learn bootstrap -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styling/contact/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <title>Contact Page</title>
 </head>
 <body>
-    <nav>
-        <div class="left-logo">
-            <a>LOGO</a>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <a href="#">HOME</a> |
+            <a href="#">About us</a> |
+            <a href="#">Recipes</a> |
+            <a href="#">Reviews</a> |
+            <a href="#">Contact</a> |
+            <a href="#">RESOURCES</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Drop us a Message</h2>
+        <form>
+            <label for="firstName">First Name</label><br>
+            <input type="text" id="firstName" name="firstName"><br><br>
+
+            <label for="lastName">Last Name</label><br>
+            <input type="text" id="lastName" name="lastName"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="purpose">Purpose</label><br>
+            <select id="purpose" name="purpose">
+                <option value="technical">TECHNICAL ISSUES</option>
+                <option value="general">GENERAL PURPOSE</option>
+                <option value="recipe">RECIPE SUGGESTION</option>
+            </select><br><br>
+
+            <label for="comments">Extra Comments</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="30"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <aside>
+            <h3>Thank you for your interest in connecting with us!</h3>
+            <p>
+                We value every message we receive and are dedicated to providing you with the support you need.
+                Whether you have questions, need assistance, or want to share your feedback, we are here to listen
+                and help. As soon as we receive your message, our team will work diligently to review it and
+                provide a thoughtful response. We aim to respond as promptly as possible, and we truly appreciate
+                your patience while we ensure that we address your needs fully. Your satisfaction and experience
+                are important to us, and we look forward to assisting you!
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <div>
+            <h4>LOGO</h4>
+            <div>
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Social Media</h5>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Newsletter</h5>
+                <form>
+                    <label for="newsletterEmail">Your email address</label><br>
+                    <input type="email" id="newsletterEmail" name="newsletterEmail"><br><br>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="">Home</a>
-            <a href="">About us</a>
-            <a href="">Recipes</a>
-            <a href="">Reviews</a>
-            <a href="">Contact</a>
-        </div>
-        <div class="right-button">
-            <button>Resources</button>
-        </div>
-    </nav>
+    </footer>
 </body>
 </html>
