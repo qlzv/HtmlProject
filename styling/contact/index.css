@@ -4,11 +4,19 @@ nav{
 }
 body{
     background-color: rgb(201, 186, 156);
+    overflow-x: hidden;
 }
 nav .navbar-nav{
 gap: 50px;
-}
 
+}
+nav .container-fluid{
+    z-index: 99999;
+    background-color: #A58E74;
+}
+.container-fluid{
+    --bs-gutter-x: 0.2rem;
+}
 .navbar-nav .nav-item .nav-link{
     color: #e6e6e6;
     font-weight: bolder;
