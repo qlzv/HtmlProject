@@ -1,0 +1,58 @@
+nav{
+    background-color: #A58E74;
+    height: 70px;
+}
+body{
+    background-color: rgb(201, 186, 156);
+}
+nav .navbar-nav{
+gap: 50px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #e6e6e6;
+    font-weight: bolder;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #000000;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: #ffffff;
+}
+a.resources{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+section.container-fluid{
+    background-color: rgb(201, 186, 156);
+   
+}
+
+#extracomments{
+height: 150px;
+}
+
+form button{
+background-color: #ffffff !important;
+color: #000000;
+font-weight: bolder;
+border-radius: 30px;
+}
+
+.container-fluid.footer{
+    height: 50% !important;
+    background-color: #A58E74;
+}
+
+.subscribe{
+    background-color: #000000 !important;
+    color: #ffffff;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    
+}
+.subscribe:hover{
+    background-color: #ffffff !important;
+    color: #000000;
+}
