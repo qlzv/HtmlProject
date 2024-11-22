@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(201, 186, 156);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #A58E74;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    color: #e6e6e6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.nav-links a.active {
+    color: #fff;
+}
+
+.resources {
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resources:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero {
+    background-color: rgb(201, 186, 156);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.hero .text-content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hero .image-content img {
+    max-width: 400px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #E09132;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .description {
+    color: #555;
+}
+
+footer {
+    background-color: #A58E74;
+    color: #e6e6e6;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-container h5 {
+    margin-bottom: 10px;
+}
+
+.footer-links, .social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a, .social-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    color: #000;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 70%;
+}
+
+.newsletter button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
