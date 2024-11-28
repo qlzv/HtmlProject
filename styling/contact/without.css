@@ -1,173 +1,140 @@
+/* 
+Navbar,Footer : #808C44
+Body-Background : #F5FFC2
+Card-Background : #AFC058
+Resources-Buttton-Background : #AFC058
+*/
+* {
+    margin: 0;  /* Reset Margin for the whole page */
+    padding: 0; /* Reset Padding for the whole page */
+    box-sizing: border-box; /* it will include any border or padding */
+}
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(201, 186, 156);
+    background-color: #F5FFC2;
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%; /* Set the height of the page to be full */
+    display: flex; /* Set the display to flex */
+    flex-direction: column; /* row is the default direction here we set it to column */
 }
 
-nav {
-    background-color: #A58E74;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav .container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-links {
-    display: flex;
-    gap: 80px;
-    margin: 0 auto;
-}
-
-.nav-links a {
-    color: #e6e6e6;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    color: #000;
-}
-
-.nav-links a.active {
-    color: #fff;
-}
-
-.resources {
-    background-color: #fff;
-    color: #000;
-    border-radius: 30px;
-    padding: 5px 15px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.resources:hover {
-    background-color: #000;
-    color: #fff;
-}
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* gap bettween each element is 20px */
+    padding: 20px; /* padding from all side is 20px */
+}
+
+.content div {
+width: 49%; /* each div in the content class will get 49% width */
 }
 
 .form-container h1 {
     font-size: 2rem;
-    color: #fff;
+    color: #000;
 }
 
 .form-container p {
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
 }
 
-form {
+form#contact_form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; /* gap bettween each element is 10px */
+    padding-top: 5%; /* padding from the top is 5% of it's parent (relative) */
 }
 
-form input, form select, form textarea {
-    padding: 10px;
+form#contact_form  input, form#contact_form  select, form#contact_form  textarea {
+    padding: 10px; /* Padding for form#contact_form  input / form#contact_form  select / form#contact_form  textarea 10 px each from all sides*/
     font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 5px; /* border-radius for form#contact_form  input / form#contact_form  select / form#contact_form  textarea is 5px */
+    border: 1px solid #ccc; /* border for form#contact_form  input / form#contact_form  select / form#contact_form  textarea is 1px solid #ccc */
 }
 
-form button {
+form#contact_form  button {
     background-color: #fff;
     color: #000;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
+    font-weight: bold; /* font-weight for form#contact_form  button is bold */
+    padding: 10px; /* Padding for form#contact_form  button is 10px */
+    border: none; /* No border for form#contact_form  button */
+    border-radius: 30px; /* border-radius for form#contact_form  button is 30px */
+    cursor: pointer; /* cursor for form#contact_form  button is pointer */
 }
 
-form button:hover {
+form#contact_form  button:hover {
     background-color: #000;
     color: #fff;
 }
 
 .image-container {
-    text-align: center;
+    text-align: center; /* text-align for image-container is center */
 }
 
 .image-container img {
-    max-width: 60%;
-    height: auto;
+width: 400px; /* width for image-container img is 400px */
+    height: auto; /* height for image-container img is auto */
 }
 
 footer {
-    background-color: #A58E74;
+    background-color: #808C44;
     color: #e6e6e6;
-    padding: 20px;
-    margin-top: auto;
+    padding: 20px; /* padding for footer is 20px */
+    margin-top: auto; /* margin-top for footer is auto */
 }
 
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+footer .footer-container {
+    display: flex; /* display for footer .footer-container is flex */
+    justify-content: space-between; /* justify-content for footer .footer-container is space-between */
+    gap: 20px; /* gap for footer .footer-container is 20px */
+    flex-wrap: wrap; /* flex-wrap for footer .footer-container is wrap */
 }
 
-.footer-container h5 {
-    margin-bottom: 10px;
+footer .footer-container h5 {
+    margin-bottom: 10px;    /* margin-bottom for footer .footer-container h5 is 10px */
 }
 
-.footer-links, .social-links {
-    display: flex;
-    flex-direction: column;
+footer .footer-links, .social-links {
+    display: flex; /* display for footer .footer-links and social-links is flex */
+    flex-direction: column; /* flex-direction for footer .footer-links and social-links is column */
 }
 
-.footer-links a, .social-links a {
+footer .footer-links a, .social-links a {
     color: #e6e6e6;
-    text-decoration: none;
-    margin-bottom: 5px;
+    text-decoration: none; /* text-decoration for footer .footer-links a and social-links a is none */
+    margin-bottom: 5px; /* margin-bottom for footer .footer-links a and social-links a is 5px */
 }
 
-.footer-links a:hover, .social-links a:hover {
+footer .footer-links a:hover, .social-links a:hover {
     color: #000;
 }
 
-.newsletter input {
-    padding: 10px;
-    margin-top: 5px;
-    width: 70%;
+footer .newsletter input {
+    padding: 10px; /* padding for footer .newsletter input is 10px */
+    margin-top: 5px; /* margin-top for footer .newsletter input is 5px */
+    width: 70%; /* width for footer .newsletter input is 70% */
 }
 
-.newsletter button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #000;
+footer .newsletter button {
+    margin-top: 10px; /* margin-top for footer .newsletter button is 10px */
+    padding: 10px; /* padding for footer .newsletter button is 10px */
+    background-color: #000;     
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
-.newsletter button:hover {
+footer .newsletter button:hover {
     background-color: #fff;
     color: #000;
 }
 
-.footer-bottom {
+footer .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
+    margin-top: 20px; /* margin-top for footer .footer-bottom is 20px */
+    border-top: 1px solid #ccc; /* border-top for footer .footer-bottom is 1px solid #ccc */
+    padding-top: 10px; /* padding-top for footer .footer-bottom is 10px */
 }
