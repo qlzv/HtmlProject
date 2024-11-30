@@ -1,6 +1,6 @@
 # Cooking Website Project For University
 
-A Functional Responsive Website with Simple ui desing <br/>
+A Functional Responsive Website with Simple ui design <br/>
 if you have any suggestions you may contact us
 
 ## Authors
