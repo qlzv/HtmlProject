@@ -25,22 +25,26 @@
             margin: 0px 35px;
         }
         .nav-link {
-            text-decoration: underline;
             color: #ffff;
         }
         .nav-link:hover {
             color: #000; 
         }
-        .btn-right {
-            background-color: #afc058; 
-            color: black; 
-            padding: 5px 15px;
-            cursor: pointer;
-            border-radius: 40px; 
-            font-size: 30;
+        
+         
+    .btn-right {
+        background-color: #afc058;
+        color: black;
+        padding: 1px 20px;
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 10px;  
+        text-align: center;  
         }
+
         .btn-right:hover {
             background-color: #fff; 
+            
         }
         .text-body {
             margin: 0px; 
@@ -51,6 +55,7 @@
             color: #000; 
             margin-left: 0px;
             font-size: 80px;
+            font-weight: bold;
         }
         .img-text {
             display: flex; 
@@ -58,7 +63,7 @@
             margin-left: 20px;
         }
         .img-text img {
-            margin-left: 50px; /* Space between text and image */
+            margin-left: 50px; 
             margin-top: 40px;
             
         }
@@ -69,6 +74,16 @@
         .img-text-2 img{
             margin-right: 50px;
         } 
+        .img-text p{
+            font-weight: bold;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img-text-2 p{
+            font-weight: bold;
+            font-size: large;
+            font-family:Arial, Helvetica, sans-serif;
+        }
         .footer-navbar {
             display: flex;
             justify-content: space-between; 
@@ -78,22 +93,29 @@
         }
         .footer-nav-links {
             margin-right: 30px; 
-            text-align: center;
+            text-align:center;
             padding: 10px;
             color: #fff;
         }
         .footer-nav-links:hover{
             color: black;
         }
-         h3{
-            text-decoration: underline;
-        }
+
         .end-navbar {
             text-align: center;
             padding: 15px;
             background-color: #8e9c48;
             margin: 0px;
         }
+        footer .newsletter button {
+        margin-top: 10px; /* margin-top for newsletter button is 10px */
+        padding: 10px;  /* padding for newsletter button is 10px */
+        background-color: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer; /* Set the cursor to pointer */
+        }
+
     </style>
 </head>
 <body>
@@ -103,7 +125,7 @@
                 <li class="nav-item"><a href="http://127.0.0.1:5500/webproject/Home.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="http://127.0.0.1:5500/webproject/AboutUs.html" class="nav-link">About Us</a></li>
                 <li class="nav-item"><a href="" class="nav-link">Recipes</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="http://127.0.0.1:5500/webproject/rev.html" class="nav-link">Reviews</a></li>
                 <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
             </ul>
         <button class="btn-right">Resources</button>
@@ -116,7 +138,7 @@
                 <p>Welcome to Cooking Masters, a celebration of time-honored recipes that have been passed down through generations in the Levant. Our mission is to bring you the authentic taste of Jordanian and Palestinian kitchens, where every recipe tells a story of culture, community, and heritage.
                     Rooted in the rich traditions of the Levant, our recipes are more than just dishes-they are a connection to our past, our families, and the land we come from. From the delicate balance of spices in a fragrant mansaf to the warmth layers of a traditional maqluba, each recipe reflects the love, patience, and care that goes into cooking for family and friends.We believe that food is a gateway to understanding a culture, and through our traditional recipes, we invite you to experience the flavors that have defined our history. Whether you're recreating a festive dish like musakhan or enjoying a simple, everyday meal, these recipes offer a window into the heart of the Levant.</p>
             </div>
-            <img class="img" src="download.png" alt="Our Story" width="400" height="400"> 
+            <img class="img" src="ourStory.jpeg" alt="Our Story" width="600" height="450"> 
         </div>
         
         <div class="img-text-2">
@@ -124,7 +146,7 @@
                 <h1 class="header-title">Our Mission</h1>
                 <p>At Cooking Masters, our mission is to preserve, celebrate, and share the culinary traditions of the Levant. We are dedicated to collecting and showcasing classic, time-tested recipes in one place, making it easier for you to discover and recreate the authentic tastes that have shaped our cultures. By preserving these recipes, we aim to keep the flavors of our heritage alive for future generations, while fostering a deeper connection to our shared history. Our goal is to offer an accessible, reliable resource for anyone looking to experience the true essence of Levantine cooking.</p>
             </div>
-            <img class="img-2" src="download.png" alt="Our Mission" width="400" height="400">
+            <img class="img-2" src="ourMission.jpeg" alt="Our Mission" width="600" height="450">
         </div>
     </div>
 
@@ -150,17 +172,25 @@
                     <li type="none"><a href="" class="footer-nav-links">Facebook</a></li>
                 </ul>
         </div>
-        <div class="footer-nav-links">
-            <h3>Stay Updated</h3>
-                <ul>
-                    <li type="none"><input type="email" placeholder="Your email address"></li>
-                    <li type="none"><button class="btn-bottom" type="button">Subscribe</button></li>
-                </ul>
-            
-        </div>
+       
+        <div>
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-50 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control w-50" placeholder="Email address">
+      
+              </div>
+              <button class="btn mt-3 subscribe w-25" type="button">Subscribe</button>
+            </form>
+          </div>
+
     </div>
 
     <p class="end-navbar">© 2024 Cooking Masters. All rights reserved.</p>
     
 </body>
 </html>
+
+    
