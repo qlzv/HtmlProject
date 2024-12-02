@@ -1,128 +1,137 @@
-/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ff0000;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* Header Styles */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .header ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .header ul li a {
-    color: #fff;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-  }
-  
-  .header ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #e63946;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .hero .btn:hover {
-    background-color: #d62828;
-  }
-  
-  /* Recipe Details Section */
-  .recipe-details {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .recipe-details h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: #e63946;
-  }
-  
-  .video-container {
-    margin-bottom: 30px;
-  }
-  
-  video {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-  }
-  
-  .ingredients-list ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-  }
-  
-  .ingredients-list ul li {
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  /* Footer Styles */
-  .footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  background-color: #808C44;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+nav .nav-links a {
+  color: #d4d4d4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .nav-links a:hover {
+  color: #000;
+}
+
+nav .nav-links a.active {
+  color: #fff;
+}
+
+nav .resources {
+  background-color: #AFC058;
+  color: #000;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav .resources:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #808C44;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #333;
+}
+
+.recipe-details {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.recipe-details h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.video-container {
+  margin-bottom: 30px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.ingredients-list ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.ingredients-list ul li {
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #808C44;
+  color: #fff;
+  text-align: center;
+}

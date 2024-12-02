@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Page</title>
   <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="logo">Recipes</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#recipes">Recipes</a></li>
-      <li><a href="#categories">Categories</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#resources">Resources</a></li>
-    </ul>
-  </header>
+  <nav> <!-- NAVBAR element that have a container div which hold LOGO & NAV elements -->
+    <div class="nav-container">
+      <a class="navbar-brand" href="#"><img src="LOGO.png" alt="Logo" width="90" height="50"></a>
+      <div class="nav-links"> <!-- Each nav link contains an a tag where each tag have a link to a page -->
+        <a href="/">Home</a>
+        <a href="/about-us">About us</a>
+        <a href="/recipes">Recipes</a>
+        <a href="#" class="active">Reviews</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <a href="/resources" class="resources">RESOURCES</a>
+    </div>
+  </nav>
 
   <section class="hero">
     <h1>Recipe Video & Ingredients</h1>
@@ -46,8 +51,10 @@
         <li>10 garlic cloves, mashed</li>
         <li>1 tablespoon of ground coriander</li>
       </ul>
-      <p><h3>Note:</h3>
-        Molokhia can also be prepared with other meats like lamb shanks, rabbit, or any preferred protein depending on taste and availability.</p>
+      <p>
+      <h3>Note:</h3>
+      Molokhia can also be prepared with other meats like lamb shanks, rabbit, or any preferred protein depending on
+      taste and availability.</p>
     </div>
   </section>
 
@@ -55,4 +62,5 @@
     <p>&copy; 2024 Delicious Recipes. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
