@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Masters</title>
+    <style>
+        
+        .header-navbar {
+            background-color: #808c44;
+            padding: 10px 30px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar-list {
+            display: flex;
+            list-style-type: none;
+        }
+        .nav-item {
+            margin: 0px 35px;
+        }
+        .nav-link {
+            color: #ffff;
+        }
+        .nav-link:hover {
+            color: #000; 
+        }
+        .btn-right {
+            background-color: #afc058; 
+            color: black; 
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 40px; 
+            font-size: 30px;
+        }
+        .btn-right:hover {
+            background-color: #fff; 
+        }
+        .text-body {
+            margin: 0px; 
+            padding: 60px;
+            background-color: #f5ffc2; 
+        }
+        .footer-navbar {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #c7c2c2; 
+        }
+        .footer-nav-links {
+            margin-right: 30px; 
+            text-align: center;
+            margin:  10px 0;
+            padding: 10px;
+        }
+        .end-navbar {
+            text-align: center;
+            padding: 15px;
+            background-color: #f1f1f1;
+            margin-top: 0px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5ffc2; 
+        }
+        .upper-section {
+            display: flex;
+            margin: 60px 50px; 
+        }
+
+        .left {
+            width: 100%;
+            height: 70%;
+            padding: 20px;
+            background-color: #afc058;
+            margin-right: 20px;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right {
+            width: 50%;
+            height: 50%;
+            padding: 20px;
+            background-color: #ffff;
+            margin-left: 20px;
+        }
+
+        .right img {
+            width: 100%;
+            height: 70%;
+            border-radius: 8px; 
+            margin-top: 20px; 
+        }
+
+        .boxes-header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin:  50px; 
+        }
+
+        .box {
+            width: 30%;
+            height: 10%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px; 
+            padding: 15px;
+            text-align: center;
+        }
+
+        .box img {
+            width: 75%;
+            height: 30%;
+            border-radius: 12px; 
+        }
+
+        .box h3 {
+            margin-top: 15px;
+            font-size: 25px;
+        }
+
+        .box p {
+            font-size: 16px;
+            color: #555;
+        }
+        .footer-navbar {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 0px;
+            padding: 20px;
+            background-color: #808c44; 
+        }
+        .footer-nav-links {
+            margin-right: 30px; 
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+        .footer-nav-links:hover{
+            color: black;
+        }
+        footer .newsletter button {
+        margin-top: 10px; /* margin-top for newsletter button is 10px */
+        padding: 10px;  /* padding for newsletter button is 10px */
+        background-color: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer; /* Set the cursor to pointer */
+        }
+
+        .end-navbar {
+            text-align: center;
+            padding: 15px;
+            background-color: #8e9c48;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="header-navbar">
+        <div class="navbar-left">
+            <img src="logo.jpeg" alt="Logo" width="70" height="60">
+        </div>
+        <ul class="navbar-list">
+            <li class="nav-item">
+                <a href="http://127.0.0.1:5500/webproject/Home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://127.0.0.1:5500/webproject/AboutUs.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://127.0.0.1:5500/webproject/rev.html" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+        <button class="btn-right" style="padding: 5px 0px;">Resources</button>
+    </nav>
+
+    <div class="upper-section">
+        <div class="left">
+            <p>Welcome to Cooking Masters, your ultimate destination for exploring the rich and diverse world of traditional food recipes. Whether you're a seasoned cook or a beginner in the kitchen, our collection of authentic recipes will guide you through the culinary traditions that have been passed down for generations. From hearty comfort foods to flavorful delicacies, we celebrate the flavors of every culture. Join us on a delicious journey where we teach you how to prepare traditional dishes with love, care, and a touch of history. Let's bring the taste of tradition to your kitchen!</p>
+        </div>
+
+        <div class="right">
+            <img src="Home.jpeg" alt="description" width="10" height="10">
+        </div>
+    </div>
+
+    <div class="boxes-header">
+        <h1>What We Do?</h1>
+    </div>
+
+    <div class="bottom-section">
+        <div class="box">
+            <img src="TraditionalMeals.jpeg" alt="Traditional Meals" width="5" height="5">
+            <h3>Traditional Meals</h3>
+            <p>Traditional Meals: Explore the authentic flavors and cultural significance of our traditional meals.</p>
+        </div>
+
+        <div class="box">
+            <img src="Learn how to cook.jpeg" alt="Learn How to Cook!" width="5" height="5">
+            <h3>Learn How to Cook!</h3>
+            <p>Learn the art of cooking with our easy-to-follow recipes and step-by-step guides.</p>
+        </div>
+
+        <div class="box">
+            <img src="Its simple.jpeg" alt=" It's Simple" width="5" height="5">
+            <h3>It's Simple</h3>
+            <p>Our simple recipes are perfect for beginners and anyone looking for easy cooking solutions.</p>
+        </div>
+    </div>
+    
+    <div class="footer-navbar">
+        <div class="footer-nav-links">
+            <img src="logo.jpeg" alt="Logo" width="70" height="60">
+        </div>
+        <div class="footer-nav-links">
+            <h3>Links</h3>
+                <ul>
+                    <li type="none">
+                        <a href="" class="footer-nav-links">Home</a>
+                    </li>
+                    <li type="none">
+                        <a href="" class="footer-nav-links">About Us</a>
+                    </li>
+                    <li type="none">
+                        <a href="" class="footer-nav-links">Recipes</a> 
+                    </li>
+                    <li type="none"><a href="#" class="footer-nav-links">Reviews</a>
+                    </li>
+                    <li type="none">
+                        <a href="" class="footer-nav-links">Contact</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer-nav-links">
+            <h3>Social Media</h3>
+            <ul>
+                <li type="none"><a href="" class="footer-nav-links">Instagram</a></li>
+                <li type="none"><a href="" class="footer-nav-links">X</a></li>
+                <li type="none"><a href="" class="footer-nav-links">Facebook</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-50 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control w-50" placeholder="Email address">
+      
+              </div>
+              <button class="btn mt-3 subscribe w-25" type="button">Subscribe</button>
+            </form>
+          </div>
+    </div>
+
+    <div class="end-navbar">
+        <p>© 2024 Coocking Masters. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
