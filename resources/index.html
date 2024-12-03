@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Resources Page</title>
+    <title>Cooking Masters - Resources</title>
+    <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,53 +16,55 @@
         }
 
         nav {
-            background-color: #808C44;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+  background-color: #808C44;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
-        nav .nav-container {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
+nav .nav-links {
+  display: flex;
+  gap: 80px;
+  margin: 0 auto;
+}
 
-        nav .nav-links {
-            display: flex;
-            gap: 80px;
-            margin: 0 auto;
-        }
+nav .nav-links a {
+  color: #d4d4d4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-        nav .nav-links a {
-            color: #d4d4d4;
-            font-weight: bold;
-            text-decoration: none;
-        }
+nav .nav-links a:hover {
+  color: #000;
+}
 
-        nav .nav-links a:hover {
-            color: #000;
-        }
+nav .nav-links a.active {
+  color: #fff;
+}
 
-        nav .nav-links a.active {
-            color: #fff;
-        }
+nav .resources {
+  background-color: #AFC058;
+  color: #000;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-        nav .resources {
-            background-color: #AFC058;
-            color: #000;
-            border-radius: 30px;
-            padding: 5px 15px;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 0.8em;
-        }
+nav .resources:hover {
+  background-color: #000;
+  color: #fff;
+}
 
-        nav .resources:hover {
-            background-color: #000;
-            color: #fff;
-        }
 
         h3 {
 
@@ -99,86 +102,66 @@
         }
 
         footer {
-            background-color: #808C44;
-            color: #e6e6e6;
-            padding: 20px;
-            /* padding for footer is 20px */
-            margin-top: auto;
-            /* margin-top for footer is auto */
-        }
+  background-color: #808C44;
+  color: #e6e6e6;
+  padding: 20px; /* padding for footer is 20px */
+  margin-top: auto; /* margin-top for footer is auto */
+}
 
-        footer .footer-container {
-            display: flex;
-            /* display for footer .footer-container is flex */
-            justify-content: space-between;
-            /* justify-content for footer .footer-container is space-between */
-            gap: 20px;
-            /* gap for footer .footer-container is 20px */
-            flex-wrap: wrap;
-            /* flex-wrap for footer .footer-container is wrap */
-        }
+footer .footer-container {
+  display: flex; /* display for footer .footer-container is flex */
+  justify-content: space-between; /* justify-content for footer .footer-container is space-between */
+  gap: 20px; /* gap for footer .footer-container is 20px */
+  flex-wrap: wrap; /* flex-wrap for footer .footer-container is wrap */
+}
 
-        footer .footer-container h5 {
-            margin-bottom: 10px;
-            /* margin-bottom for footer .footer-container h5 is 10px */
-        }
+footer .footer-container h5 {
+  margin-bottom: 10px;    /* margin-bottom for footer .footer-container h5 is 10px */
+}
 
-        footer .footer-links,
-        .social-links {
-            display: flex;
-            /* display for footer .footer-links and social-links is flex */
-            flex-direction: column;
-            /* flex-direction for footer .footer-links and social-links is column */
-        }
+footer .footer-links, .social-links {
+  display: flex; /* display for footer .footer-links and social-links is flex */
+  flex-direction: column; /* flex-direction for footer .footer-links and social-links is column */
+}
 
-        footer .footer-links a,
-        .social-links a {
-            color: #e6e6e6;
-            text-decoration: none;
-            /* text-decoration for footer .footer-links a and social-links a is none */
-            margin-bottom: 5px;
-            /* margin-bottom for footer .footer-links a and social-links a is 5px */
-        }
+footer .footer-links a, .social-links a {
+  color: #e6e6e6;
+  text-decoration: none; /* text-decoration for footer .footer-links a and social-links a is none */
+  margin-bottom: 5px; /* margin-bottom for footer .footer-links a and social-links a is 5px */
+  transition: color 0.3s;
+}
 
-        footer .footer-links a:hover,
-        .social-links a:hover {
-            color: #000;
-        }
+footer .footer-links a:hover, .social-links a:hover {
+  color: #000;
+}
 
-        footer .newsletter input {
-            padding: 10px;
-            /* padding for newsletter input is 10px */
-            margin-top: 5px;
-            /* margin-top for newsletter input is 5px */
-            width: 70%;
-            /* width for newsletter input is 70% */
-        }
+footer .newsletter input {
+  padding: 10px; /* padding for footer .newsletter input is 10px */
+  margin-top: 5px; /* margin-top for footer .newsletter input is 5px */
+  width: 70%; /* width for footer .newsletter input is 70% */
+}
 
-        footer .newsletter button {
-            margin-top: 10px;
-            /* margin-top for newsletter button is 10px */
-            padding: 10px;
-            /* padding for newsletter button is 10px */
-            background-color: #000;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            /* Set the cursor to pointer */
-        }
+footer .newsletter button {
+  margin-top: 10px; /* margin-top for footer .newsletter button is 10px */
+  padding: 10px; /* padding for footer .newsletter button is 10px */
+  background-color: #000;     
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-        footer .newsletter button:hover {
-            background-color: #fff;
-            color: #000;
-        }
+footer .newsletter button:hover {
+  background-color: #fff;
+  color: #000;
+}
 
-        footer .footer-bottom {
-            text-align: center;
-            margin-top: 20px;
-            /* margin-top for footer .footer-bottom is 20px */
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-            /* padding-top for footer .footer-bottom is 10px */
-        }
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px; /* margin-top for footer .footer-bottom is 20px */
+  border-top: 1px solid #ccc; /* border-top for footer .footer-bottom is 1px solid #ccc */
+  padding-top: 10px; /* padding-top for footer .footer-bottom is 10px */
+}
     </style>
 </head>
 
@@ -191,10 +174,10 @@
                 <a class="navbar-brand" href="#"><img src="../images/LOGO.png" alt="Logo" width="90" height="50"></a>
                 <div class="nav-links"> <!-- Each nav link contains an a tag where each tag have a link to a page -->
                     <a href="/">Home</a>
-                    <a href="/about-us">About us</a>
-                    <a href="/recipes">Recipes</a>
-                    <a href="/reviews/" class="">Reviews</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/Aboutus/aboutus.html">About us</a>
+                    <a href="/Recipes/index.html">Recipes</a>
+                    <a href="/reviews/index.html">Reviews</a>
+                    <a href="/contact/index.html">Contact</a>
                 </div>
                 <a href="#" class="resources" style="background-color: #000; color : white; text-decoration: none;">RESOURCES</a>
             </div>
@@ -219,16 +202,16 @@
             <div class="footer-links"> <!-- Footer-links that hold links -->
                 <h5>Links</h5>
                 <a href="/">Home</a>
-                <a href="/about-us">About us</a>
-                <a href="/recipes">Recipes</a>
-                <a href="# ">Reviews</a>
-                <a href="/contact">Contact</a>
+                <a href="/Aboutus/aboutus.html">About us</a>
+                <a href="/Recipes/index.html">Recipes</a>
+                <a href="/reviews/index.html">Reviews</a>
+                <a href="/contact/index.html">Contact</a>
             </div>
             <div class="social-links"> <!-- Social-links that hold social links -->
                 <h5>Social</h5>
-                <a href="#">Instagram</a>
-                <a href="#">X</a>
-                <a href="#">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">X</a>
+                <a href="https://www.facebook.com/">Facebook</a>
             </div>
             <div class="newsletter"> <!-- Newsletter that hold the newsletter form -->
                 <h5>Subscribe to our newsletter</h5>
@@ -242,7 +225,7 @@
             </div>
         </div>
         <div class="footer-bottom"> <!-- Footer-bottom that hold the copy right -->
-            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <p>© 2024 Cooking Masters. All rights reserved.</p>
         </div>
     </footer>
 </body>

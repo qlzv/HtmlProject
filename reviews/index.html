@@ -3,144 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <link rel="stylesheet" href="../styling/reviews/index.css">
-    <title>Reviews</title>
+    <link rel="stylesheet" href="../styling/reviews/index.css">
+    <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
+    <title>Cooking Masters - Reviews</title>
+    <style>
+nav {
+  background-color: #808C44;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+nav .nav-links a {
+  color: #d4d4d4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #000;
+}
+
+nav .nav-links a.active {
+  color: #fff;
+}
+
+nav .resources {
+  background-color: #AFC058;
+  color: #000;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav .resources:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="../images/LOGO.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/about-us">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/about-us">Recipes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/contact/">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <a href="" class="btn resources">RESOURCES</a>
-            </form>
+      <nav>   <!-- NAVBAR element that have a container div which hold LOGO & NAV elements -->
+        <div class="nav-container">
+          <a class="navbar-brand" href="#"><img src="../images/LOGO.png" alt="Logo" width="90" height="50"></a>
+          <div class="nav-links"> <!-- Each nav link contains an a tag where each tag have a link to a page -->
+            <a href="/">Home</a>
+            <a href="/Aboutus/aboutus.html">About us</a>
+            <a href="/Recipes/index.html">Recipes</a>
+            <a href="#" class="active">Reviews</a>
+            <a href="/contact/index.html">Contact</a>
           </div>
+          <a href="/resources/index.html" class="resources">RESOURCES</a>
         </div>
-      </nav>
-      <section class="container-fluid  d-flex flex-column justify-content-center align-items-center py-5">
-        <div class="py-3"></div>
-        <div class="row w-100 align-items-center">
-        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-        <h1 class="display-4 fw-bold mb-3 text-light py-5">
-            Here’s What People Are <br> Saying About Us – Discover <br> the Experiences, Feedback
-        </h1>
-       
-      
+    </nav>
+
+    <div class="container"> <!-- Container div that hold text -->
+        <div class="text-content" style="padding-top: 5%;"> <!-- Added Padding from the top to make text in the same level as the photo -->
+            <h1> Here’s What People Are <br> Saying About Us – Discover <br> the Experiences, Feedbacks</h1>
         </div>
-        <div class="col-lg-5 text-lg-end text-center ms-2">
-        <img src="../images/reviews.png" alt="Coffee" width="400" class="img-fluid heading py-2">
-       
+        <div class="image-content">
+            <img src="../images/reviews.png" alt="reviews">
         </div>
+    </div>
+
+    <div class="reviews">  <!-- REVIEWS div that cards -->
+        <div class="card"> <!-- CARD div each card div  contains an img name and description -->
+            <img src="../images/user.png" width="50" height="50" alt="User Icon"> <!-- EACH image has a width and height of 50x50 -->
+            <h5>Sanad</h5>
+            <p>Wonderful Experience</p>
+            <p style="padding-top: 3%;"  class="description">it was a great experience. The recipes were easy to follow, and the results were delicious. I especially loved the Mansaf recipe; it reminded me of my grandmother's cooking. The website is well-organized, and the step-by-step guides are very helpful. I will definitely be trying more recipes from Cooking Masters. Highly recommended!</p>
         </div>
-        <div class="container my-4">
-            <div class="row g-3">
-            
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card text-center  border-0 h-100">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://via.placeholder.com/50" alt="User Icon" class="rounded-circle mb-3">
-                    <h5 class="card-title fw-bold mb-2">Name</h5>
-                    <p class="card-text mb-1">Great Experience</p>
-                    <p class="text-muted small mb-0">description</p>
-                  </div>
-                </div>
-              </div>
-       
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card text-center border-0 h-100">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://via.placeholder.com/50" alt="User Icon" class="rounded-circle mb-3">
-                    <h5 class="card-title fw-bold mb-2">Name</h5>
-                    <p class="card-text mb-1">Great Experience</p>
-                    <p class="text-muted small mb-0">description</p>
-                  </div>
-                </div>
-              </div>
-       
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="card text-center  border-0 h-100">
-                  <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://via.placeholder.com/50" alt="User Icon" class="rounded-circle mb-3">
-                    <h5 class="card-title fw-bold mb-2">Name</h5>
-                    <p class="card-text mb-1">Great Experience</p>
-                    <p class="text-muted small mb-0">description</p>
-                  </div>
-                </div>
-              </div>
+        <div class="card">
+            <img src="../images/user.png" width="50" height="50" alt="User Icon">
+            <h5>Karam</h5>
+            <p>Great Experience</p>
+            <p style="padding-top: 3%;" class="description">The website is fantastic! The layout is clean and easy to navigate, making it simple to find the recipes I want. The instructions are clear and concise, and the photos are very helpful. I've tried several dishes already, and they all turned out great. This has become my go-to site for cooking inspiration. Highly recommended!</p>
+        </div>
+        <div class="card">
+            <img src="../images/user.png" width="50" height="50" alt="User Icon">
+            <h5>Naser</h5>
+            <p>Fantastic Experience</p>
+            <p style="padding-top: 3%;" class="description">This website is a wonderful resource for anyone who loves to cook. The variety of recipes is impressive, and each one I've tried has been a hit with my family. The detailed instructions and helpful tips make it easy to recreate the dishes at home. I highly recommend this site to all my friends!</p>
+        </div>
+    </div>
+
+    <footer> <!-- Footer tag -->
+        <div class="footer-container"> <!-- Footer-container that hold logo and links and newsletter -->
+            <div class="footer-logo"> <!-- Footer-logo that hold the logo -->
+                <img src="../images/LOGO.png" alt="Logo" width="90" height="50"> <!-- Logo image with width and height of 90x50 -->
             </div>
-          </div>
-        </section>
-        <div class="py-5"></div>
-        <div class="py-5"></div>
-        <div class="container-fluid footer py-5">
-            <footer class="py-5">
-              <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-            <img src="../images/LOGO.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-                </div>
-          
-                <div class="col-6 col-md-2 mb-3">
-                  <h5>Links</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recipes</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reviews</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-6 col-md-2 mb-3">
-                  <h5>Social</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">X</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-md-5 offset-md-1 mb-3">
-                  <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-50 gap-2">
-                      <label for="newsletter1" class="visually-hidden">Email address</label>
-                      <input id="newsletter1" type="email" class="form-control w-50" placeholder="Email address">
-            
-                    </div>
-                    <button class="btn mt-3 subscribe w-25" type="button">Subscribe</button>
-                  </form>
-                </div>
-              </div>
-          
-              <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
-                <p>© 2024 Company, Inc. All rights reserved.</p>
-                
-              </div>
-            </footer>
-          </div>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <div class="footer-links"> <!-- Footer-links that hold links -->
+                <h5>Links</h5>
+                <a href="/">Home</a>
+                <a href="/Aboutus/aboutus.html">About us</a>
+                <a href="/Recipes/index.html">Recipes</a>
+                <a href="#">Reviews</a>
+                <a href="/contact/index.html">Contact</a>
+            </div>
+            <div class="social-links"> <!-- Social-links that hold social links -->
+                <h5>Social</h5>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">X</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div class="newsletter"> <!-- Newsletter that hold the newsletter form -->
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+           <form name="newsletterForm" id="newsletterForm"> <!-- Form for the newsletter tthe default method is GET -->
+            <input name="email" type="email" id="newsletter1" placeholder="Email address" required> <!-- Input email it's required -->
+            <button type="submit">Subscribe</button>
+           </form>
+            </div>
+        </div>
+        <div class="footer-bottom"> <!-- Footer-bottom that hold the copy right -->
+            <p>© 2024 Cooking Masters. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

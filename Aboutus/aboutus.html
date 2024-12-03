@@ -3,45 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooking Master</title>
+    <title>Cooking Master - About</title>
+    <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0px;
-            padding: 0px; 
+            margin: 0;
+            padding: 0; 
         }
-        .header-navbar {
-            background-color: #808c44;
-            padding: 10px 30px;
-            padding-top: 20px;
-            display: flex;
-            justify-content: space-between;
+        *{
+            box-sizing: border-box;
         }
-        .navbar-list {
-            display: flex;
-            list-style-type: none;
-        }
-        .nav-item {
-            margin: 0px 35px;
-        }
-        .nav-link {
-            text-decoration: underline;
-            color: #ffff;
-        }
-        .nav-link:hover {
-            color: #000; 
-        }
-        .btn-right {
-            background-color: #afc058; 
-            color: black; 
-            padding: 5px 15px;
-            cursor: pointer;
-            border-radius: 40px; 
-            font-size: 30;
-        }
-        .btn-right:hover {
-            background-color: #fff; 
-        }
+        nav {
+    background-color: #808C44;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+}
+
+nav .nav-links a {
+    color: #d4d4d4;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #000;
+}
+
+nav .nav-links a.active {
+    color: #fff;
+}
+
+nav .resources {
+    background-color: #AFC058;
+    color: #000;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .resources:hover {
+    background-color: #000;
+    color: #fff;
+}
+
         .text-body {
             margin: 0px; 
             padding: 60px;
@@ -69,98 +91,136 @@
         .img-text-2 img{
             margin-right: 50px;
         } 
-        .footer-navbar {
-            display: flex;
-            justify-content: space-between; 
-            margin-top: 0px;
-            padding: 20px;
-            background-color: #808c44; 
-        }
-        .footer-nav-links {
-            margin-right: 30px; 
-            text-align: center;
-            padding: 10px;
-            color: #fff;
-        }
-        .footer-nav-links:hover{
-            color: black;
-        }
-         h3{
-            text-decoration: underline;
-        }
-        .end-navbar {
-            text-align: center;
-            padding: 15px;
-            background-color: #8e9c48;
-            margin: 0px;
-        }
+        footer {
+    background-color: #808C44;
+    color: #e6e6e6;
+    padding: 20px; /* padding for footer is 20px */
+    margin-top: auto; /* margin-top for footer is auto */
+}
+
+footer .footer-container {
+    display: flex; /* display for footer .footer-container is flex */
+    justify-content: space-between; /* justify-content for footer .footer-container is space-between */
+    gap: 20px; /* gap for footer .footer-container is 20px */
+    flex-wrap: wrap;   /* flex-wrap for footer .footer-container is wrap */
+}
+
+footer .footer-container h5 {
+    margin-bottom: 10px;   /* margin-bottom for footer .footer-container h5 is 10px */
+}
+
+footer .footer-links, .social-links {
+    display: flex; /* display for footer .footer-links and social-links is flex */
+    flex-direction: column; /* flex-direction for footer .footer-links and social-links is column */
+}
+
+footer .footer-links a, .social-links a {
+    color: #e6e6e6;
+    text-decoration: none; /* text-decoration for footer .footer-links a and social-links a is none */
+    margin-bottom: 5px; /* margin-bottom for footer .footer-links a and social-links a is 5px */
+    transition: color 0.3s;
+}
+
+footer .footer-links a:hover, .social-links a:hover {
+    color: #000;
+}
+
+footer .newsletter input {
+    padding: 10px; /* padding for newsletter input is 10px */
+    margin-top: 5px; /* margin-top for newsletter input is 5px */ 
+    width: 70%; /* width for newsletter input is 70% */
+}
+
+footer .newsletter button {
+    margin-top: 10px; /* margin-top for newsletter button is 10px */
+    padding: 10px;  /* padding for newsletter button is 10px */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer; /* Set the cursor to pointer */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer .newsletter button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 20px; /* margin-top for footer .footer-bottom is 20px */
+    border-top: 1px solid #ccc;
+    padding-top: 10px; /* padding-top for footer .footer-bottom is 10px */
+}
     </style>
 </head>
 <body>
-    <nav class="header-navbar">
-        <div class="navbar-left"><img src="logo.jpeg" alt="Logo" width="70" height="60"></div>
-            <ul class="navbar-list">
-                <li class="nav-item"><a href="http://127.0.0.1:5500/webproject/Home.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="http://127.0.0.1:5500/webproject/AboutUs.html" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Recipes</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Reviews</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
-            </ul>
-        <button class="btn-right">Resources</button>
+    <nav>   <!-- NAVBAR element that have a container div which hold LOGO & NAV elements -->
+        <div class="nav-container">
+          <a class="navbar-brand" href="#"><img src="../images/LOGO.png" alt="Logo" width="90" height="50"></a>
+          <div class="nav-links"> <!-- Each nav link contains an a tag where each tag have a link to a page -->
+            <a href="/">Home</a>
+            <a href="#" class="active">About us</a>
+            <a href="/Recipes/index.html">Recipes</a>
+            <a href="/reviews/index.html" class="">Reviews</a>
+            <a href="/contact/index.html">Contact</a>
+          </div>
+          <a href="/resources/index.html" class="resources">RESOURCES</a>
+        </div>
     </nav>
 
     <div class="text-body" style="padding-top: 20px;"> 
         <div class="img-text">
             <div>
                 <h1 class="header-title">Our Story</h1>
-                <p>Welcome to Cooking Masters, a celebration of time-honored recipes that have been passed down through generations in the Levant. Our mission is to bring you the authentic taste of Jordanian and Palestinian kitchens, where every recipe tells a story of culture, community, and heritage.
+                <p style="font-weight: bolder;">Welcome to Cooking Masters, a celebration of time-honored recipes that have been passed down through generations in the Levant. Our mission is to bring you the authentic taste of Jordanian and Palestinian kitchens, where every recipe tells a story of culture, community, and heritage.
                     Rooted in the rich traditions of the Levant, our recipes are more than just dishes-they are a connection to our past, our families, and the land we come from. From the delicate balance of spices in a fragrant mansaf to the warmth layers of a traditional maqluba, each recipe reflects the love, patience, and care that goes into cooking for family and friends.We believe that food is a gateway to understanding a culture, and through our traditional recipes, we invite you to experience the flavors that have defined our history. Whether you're recreating a festive dish like musakhan or enjoying a simple, everyday meal, these recipes offer a window into the heart of the Levant.</p>
             </div>
-            <img class="img" src="download.png" alt="Our Story" width="400" height="400"> 
+            <img class="img" src="../images/ourStory.jpeg" alt="Our Story" width="480" height="400"> 
         </div>
         
         <div class="img-text-2">
             <div>
                 <h1 class="header-title">Our Mission</h1>
-                <p>At Cooking Masters, our mission is to preserve, celebrate, and share the culinary traditions of the Levant. We are dedicated to collecting and showcasing classic, time-tested recipes in one place, making it easier for you to discover and recreate the authentic tastes that have shaped our cultures. By preserving these recipes, we aim to keep the flavors of our heritage alive for future generations, while fostering a deeper connection to our shared history. Our goal is to offer an accessible, reliable resource for anyone looking to experience the true essence of Levantine cooking.</p>
+                <p style="font-weight: bolder;">At Cooking Masters, our mission is to preserve, celebrate, and share the culinary traditions of the Levant. We are dedicated to collecting and showcasing classic, time-tested recipes in one place, making it easier for you to discover and recreate the authentic tastes that have shaped our cultures. By preserving these recipes, we aim to keep the flavors of our heritage alive for future generations, while fostering a deeper connection to our shared history. Our goal is to offer an accessible, reliable resource for anyone looking to experience the true essence of Levantine cooking.</p>
             </div>
-            <img class="img-2" src="download.png" alt="Our Mission" width="400" height="400">
+            <img class="img-2" src="../images/ourMission.jpeg" alt="Our Mission" width="480" height="400">
         </div>
+ 
     </div>
 
-    <div class="footer-navbar">
-        <div class="footer-nav-links">
-            <img src="logo.jpeg" alt="Logo" width="70" height="60">
+    <footer> <!-- Footer tag -->
+        <div class="footer-container"> <!-- Footer-container that hold logo and links and newsletter -->
+            <div class="footer-logo"> <!-- Footer-logo that hold the logo -->
+                <img src="../images/LOGO.png" alt="Logo" width="90" height="50"> <!-- Logo image with width and height of 90x50 -->
+            </div>
+            <div class="footer-links"> <!-- Footer-links that hold links -->
+                <h5>Links</h5>
+                <a href="/">Home</a>
+                <a href="#">About us</a>
+                <a href="/Recipes/index.html">Recipes</a>
+                <a href="/reviews/index.html">Reviews</a>
+                <a href="/contact/index.html">Contact</a>
+            </div>
+            <div class="social-links"> <!-- Social-links that hold social links -->
+                <h5>Social</h5>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">X</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div class="newsletter"> <!-- Newsletter that hold the newsletter form -->
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+           <form name="newsletterForm" id="newsletterForm"> <!-- Form for the newsletter tthe default method is GET -->
+            <input name="email" type="email" id="newsletter1" placeholder="Email address" required> <!-- Input email it's required -->
+            <button type="submit">Subscribe</button>
+           </form>
+            </div>
         </div>
-        <div class="footer-nav-links">
-            <h3>Links</h3>
-                <ul>
-                    <li type="none"><a href="" class="footer-nav-links">Home</a></li>
-                    <li type="none"><a href="" class="footer-nav-links">About Us</a></li>
-                    <li type="none"><a href="" class="footer-nav-links">Recipes</a></li>
-                    <li type="none"><a href="" class="footer-nav-links">Reviews</a></li>
-                    <li type="none"><a href="" class="footer-nav-links">Contact</a></li>
-                </ul>
+        <div class="footer-bottom"> <!-- Footer-bottom that hold the copy right -->
+            <p>© 2024 Cooking Masters. All rights reserved.</p>
         </div>
-        <div class="footer-nav-links">
-            <h3>Social Media</h3>
-                <ul>
-                    <li type="none"><a href="" class="footer-nav-links">Instagram</a></li>
-                    <li type="none"><a href="" class="footer-nav-links">X</a></li>
-                    <li type="none"><a href="" class="footer-nav-links">Facebook</a></li>
-                </ul>
-        </div>
-        <div class="footer-nav-links">
-            <h3>Stay Updated</h3>
-                <ul>
-                    <li type="none"><input type="email" placeholder="Your email address"></li>
-                    <li type="none"><button class="btn-bottom" type="button">Subscribe</button></li>
-                </ul>
-            
-        </div>
-    </div>
-
-    <p class="end-navbar">© 2024 Cooking Masters. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>

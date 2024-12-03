@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #F5FFC2;
 }
 
 a {
@@ -22,7 +23,6 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 nav .nav-container {
   display: flex;
   align-items: center;
@@ -39,6 +39,7 @@ nav .nav-links a {
   color: #d4d4d4;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 nav .nav-links a:hover {
@@ -57,6 +58,7 @@ nav .resources {
   font-weight: bold;
   text-decoration: none;
   font-size: 0.8em;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav .resources:hover {
