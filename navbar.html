@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+                    Cooking Masters
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 mt-1 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Aboutus/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Recipes/index.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reviews/index.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact</a>
+                    </li>
+                </ul>
+
+
+                <a href="/resources/index.html" class="btn resources my-auto">Resources</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<style>
+    nav {
+        background-color: #808C44 !important;
+
+    }
+
+    .nav-link {
+        color: #d4d4d4;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-link.active {
+        color: #fff !important;
+    }
+
+    .resources {
+        background-color: #AFC058;
+        color: #000;
+        border-radius: 30px;
+        font-weight: bold;
+        padding: 10px 15px;
+        font-size: 0.8em;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .resources:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .offcanvas {
+        background-color: #808C44 !important;
+    }
+</style>
