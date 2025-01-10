@@ -1,140 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styling/reviews/index.css">
-    <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
-    <title>Cooking Masters - Reviews</title>
-    <style>
-nav {
-  background-color: #808C44;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav .nav-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styling/reviews/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
+  <title>Cooking Masters - Reviews</title>
+  <style>
+    nav {
+      background-color: #808C44 !important;
 
-nav .nav-links {
-  display: flex;
-  gap: 80px;
-  margin: 0 auto;
-}
+    }
 
-nav .nav-links a {
-  color: #d4d4d4;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    .nav-link {
+      color: #d4d4d4;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-nav .nav-links a:hover {
-  color: #000;
-}
+    .nav-link.active {
+      color: #fff !important;
+    }
 
-nav .nav-links a.active {
-  color: #fff;
-}
+    .resources {
+      background-color: #AFC058;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      padding: 10px 15px;
+      font-size: 0.8em;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-nav .resources {
-  background-color: #AFC058;
-  color: #000;
-  border-radius: 30px;
-  padding: 5px 15px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 0.8em;
-  transition: background-color 0.3s, color 0.3s;
-}
+    .resources:hover {
+      background-color: #000;
+      color: #fff;
+    }
 
-nav .resources:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-    </style>
+    .offcanvas {
+      background-color: #808C44 !important;
+    }
+  </style>
 </head>
+
 <body>
-      <nav>   <!-- NAVBAR element that have a container div which hold LOGO & NAV elements -->
-        <div class="nav-container">
-          <a class="navbar-brand" href="#"><img src="../images/LOGO.png" alt="Logo" width="90" height="50"></a>
-          <div class="nav-links"> <!-- Each nav link contains an a tag where each tag have a link to a page -->
-            <a href="/">Home</a>
-            <a href="/Aboutus/aboutus.html">About us</a>
-            <a href="/Recipes/index.html">Recipes</a>
-            <a href="#" class="active">Reviews</a>
-            <a href="/contact/index.html">Contact</a>
-          </div>
-          <a href="/resources/index.html" class="resources">RESOURCES</a>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+            Cooking Masters
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
 
-    <div class="container"> <!-- Container div that hold text -->
-        <div class="text-content" style="padding-top: 5%;"> <!-- Added Padding from the top to make text in the same level as the photo -->
-            <h1> Here’s What People Are <br> Saying About Us – Discover <br> the Experiences, Feedbacks</h1>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 mt-1 gap-5">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Aboutus/aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Recipes/index.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/index.html">Contact</a>
+            </li>
+          </ul>
+
+
+          <a href="/resources/index.html" class="btn resources my-auto">Resources</a>
+
         </div>
+      </div>
+    </div>
+  </nav>
+  <div class="mt-5"></div>
+  <div class="container-fluid mt-5"> <!-- Container div that hold text -->
+    <div class="row text-sm-center">
+      <div class="col-md-6">
+        <div class="text-content mt-5" style="padding-top: 5%;">
+          <!-- Added Padding from the top to make text in the same level as the photo -->
+          <h1> Here’s What People Are <br> Saying About Us – Discover <br> the Experiences, Feedbacks</h1>
+        </div>
+      </div>
+      <div class="col-md-6">
         <div class="image-content">
-            <img src="../images/reviews.png" alt="reviews">
+          <img src="../images/reviews.png" class="img-fluid" width="70%" alt="reviews">
         </div>
+      </div>
     </div>
-
-    <div class="reviews">  <!-- REVIEWS div that cards -->
-        <div class="card"> <!-- CARD div each card div  contains an img name and description -->
-            <img src="../images/user.png" width="50" height="50" alt="User Icon"> <!-- EACH image has a width and height of 50x50 -->
-            <h5>Sanad</h5>
-            <p>Wonderful Experience</p>
-            <p style="padding-top: 3%;"  class="description">it was a great experience. The recipes were easy to follow, and the results were delicious. I especially loved the Mansaf recipe; it reminded me of my grandmother's cooking. The website is well-organized, and the step-by-step guides are very helpful. I will definitely be trying more recipes from Cooking Masters. Highly recommended!</p>
+  </div>
+  <div class="container ">
+    <div class="row mx-auto gy-5"> <!-- Row div that hold the cards -->
+      <div class="col-md-6 col-lg-4 ">
+        <div class="cards"> <!-- CARD div each card div  contains an img name and description -->
+          <img src="../images/user.png" width="50" height="50" alt="User Icon">
+          <!-- EACH image has a width and height of 50x50 -->
+          <h5>Sanad</h5>
+          <p>Wonderful Experience</p>
+          <p style="padding-top: 3%;" class="description">it was a great experience. The recipes were easy to follow,
+            and the results were delicious. I especially loved the Mansaf recipe; it reminded me of my grandmother's
+            cooking. The website is well-organized, and the step-by-step guides are very helpful. I will definitely be
+            trying more recipes from Cooking Masters. Highly recommended!</p>
         </div>
-        <div class="card">
-            <img src="../images/user.png" width="50" height="50" alt="User Icon">
-            <h5>Karam</h5>
-            <p>Great Experience</p>
-            <p style="padding-top: 3%;" class="description">The website is fantastic! The layout is clean and easy to navigate, making it simple to find the recipes I want. The instructions are clear and concise, and the photos are very helpful. I've tried several dishes already, and they all turned out great. This has become my go-to site for cooking inspiration. Highly recommended!</p>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="cards"> <!-- CARD div each card div  contains an img name and description -->
+          <img src="../images/user.png" width="50" height="50" alt="User Icon">
+          <h5>Karam</h5>
+          <p>Great Experience</p>
+          <p style="padding-top: 3%;" class="description">The website is fantastic! The layout is clean and easy to
+            navigate, making it simple to find the recipes I want. The instructions are clear and concise, and the
+            photos are very helpful. I've tried several dishes already, and they all turned out great. This has become
+            my go-to site for cooking inspiration. Highly recommended!</p>
         </div>
-        <div class="card">
-            <img src="../images/user.png" width="50" height="50" alt="User Icon">
-            <h5>Naser</h5>
-            <p>Fantastic Experience</p>
-            <p style="padding-top: 3%;" class="description">This website is a wonderful resource for anyone who loves to cook. The variety of recipes is impressive, and each one I've tried has been a hit with my family. The detailed instructions and helpful tips make it easy to recreate the dishes at home. I highly recommend this site to all my friends!</p>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="cards"> <!-- CARD div each card div  contains an img name and description -->
+          <img src="../images/user.png" width="50" height="50" alt="User Icon">
+          <h5>Naser</h5>
+          <p>Fantastic Experience</p>
+          <p style="padding-top: 3%;" class="description">This website is a wonderful resource for anyone who loves to
+            cook. The variety of recipes is impressive, and each one I've tried has been a hit with my family. The
+            detailed instructions and helpful tips make it easy to recreate the dishes at home. I highly recommend this
+            site to all my friends!</p>
         </div>
+      </div>
     </div>
-
-    <footer> <!-- Footer tag -->
-        <div class="footer-container"> <!-- Footer-container that hold logo and links and newsletter -->
-            <div class="footer-logo"> <!-- Footer-logo that hold the logo -->
-                <img src="../images/LOGO.png" alt="Logo" width="90" height="50"> <!-- Logo image with width and height of 90x50 -->
-            </div>
-            <div class="footer-links"> <!-- Footer-links that hold links -->
-                <h5>Links</h5>
-                <a href="/">Home</a>
-                <a href="/Aboutus/aboutus.html">About us</a>
-                <a href="/Recipes/index.html">Recipes</a>
-                <a href="#">Reviews</a>
-                <a href="/contact/index.html">Contact</a>
-            </div>
-            <div class="social-links"> <!-- Social-links that hold social links -->
-                <h5>Social</h5>
-                <a href="https://www.instagram.com/">Instagram</a>
-                <a href="https://x.com/">X</a>
-                <a href="https://www.facebook.com/">Facebook</a>
-            </div>
-            <div class="newsletter"> <!-- Newsletter that hold the newsletter form -->
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-           <form name="newsletterForm" id="newsletterForm"> <!-- Form for the newsletter tthe default method is GET -->
-            <input name="email" type="email" id="newsletter1" placeholder="Email address" required> <!-- Input email it's required -->
-            <button type="submit">Subscribe</button>
-           </form>
-            </div>
-        </div>
-        <div class="footer-bottom"> <!-- Footer-bottom that hold the copy right -->
-            <p>© 2024 Cooking Masters. All rights reserved.</p>
-        </div>
-    </footer>
+  </div>
+  <footer class="mt-5"> <!-- Footer tag -->
+    <div class="footer-container"> <!-- Footer-container that hold logo and links and newsletter -->
+      <div class="footer-logo"> <!-- Footer-logo that hold the logo -->
+        <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+        <!-- Logo image with width and height of 90x50 -->
+      </div>
+      <div class="footer-links"> <!-- Footer-links that hold links -->
+        <h5>Links</h5>
+        <a href="/">Home</a>
+        <a href="/Aboutus/aboutus.html">About us</a>
+        <a href="/Recipes/index.html">Recipes</a>
+        <a href="#">Reviews</a>
+        <a href="/contact/index.html">Contact</a>
+      </div>
+      <div class="social-links"> <!-- Social-links that hold social links -->
+        <h5>Social</h5>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/">X</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+      </div>
+      <div class="newsletter"> <!-- Newsletter that hold the newsletter form -->
+        <h5>Subscribe to our newsletter</h5>
+        <p>Monthly digest of what's new and exciting from us.</p>
+        <form name="newsletterForm" id="newsletterForm"> <!-- Form for the newsletter tthe default method is GET -->
+          <input name="email" type="email" id="newsletter1" placeholder="Email address" required>
+          <!-- Input email it's required -->
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom"> <!-- Footer-bottom that hold the copy right -->
+      <p>© 2024 Cooking Masters. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
