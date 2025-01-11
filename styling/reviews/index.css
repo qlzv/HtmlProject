@@ -57,13 +57,10 @@ div .cards {
   margin-bottom: 10px;
 }
 
-.cards h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 
 .cards .description {
   color: #555;
+  padding: 20px;
 }
 
 footer {

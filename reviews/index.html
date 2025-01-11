@@ -52,6 +52,9 @@
       <a class="navbar-brand" href="#">
         <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
       </a>
+      <li class="nav-item mt-3" style="list-style: none;">
+        <p class="" id="time"></p>
+      </li>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -82,17 +85,46 @@
             <li class="nav-item">
               <a class="nav-link" href="/contact/index.html">Contact</a>
             </li>
+
           </ul>
 
-
+          <script>
+            function updateTime() {
+              var currentTime = new Date();
+              var hours = currentTime.getHours();
+              var minutes = currentTime.getMinutes();
+              var seconds = currentTime.getSeconds();
+              var timeOfDay = "AM";
+              if (hours > 12) {
+                hours = hours - 12;
+                timeOfDay = "PM";
+              }
+              if (hours == 0) {
+                hours = 12;
+              }
+              if (minutes < 10) {
+                minutes = "0" + minutes;
+              }
+              if (seconds < 10) {
+                seconds = "0" + seconds;
+              }
+              var currentTimeString = hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
+              document.getElementById("time").innerHTML = currentTimeString;
+            }
+            updateTime();
+            setInterval(updateTime, 1000);
+          </script>
           <a href="/resources/index.html" class="btn resources my-auto">Resources</a>
 
         </div>
       </div>
     </div>
   </nav>
+
   <div class="mt-5"></div>
+
   <div class="container-fluid mt-5"> <!-- Container div that hold text -->
+
     <div class="row text-sm-center">
       <div class="col-md-6">
         <div class="text-content mt-5" style="padding-top: 5%;">
@@ -145,6 +177,7 @@
       </div>
     </div>
   </div>
+
   <footer class="mt-5"> <!-- Footer tag -->
     <div class="footer-container"> <!-- Footer-container that hold logo and links and newsletter -->
       <div class="footer-logo"> <!-- Footer-logo that hold the logo -->
