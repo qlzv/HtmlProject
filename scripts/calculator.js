@@ -62,7 +62,7 @@ function validateForm() {
         recipeError.innerHTML = "Error, You Must Select Reecipe";
         isError = true;
     }
-    if (parseFloat(portion.value) <= 0 || parseFloat(portion.value) > 3) {
+    if (parseFloat(portion.value) <= 0 || parseFloat(portion.value) > 3 || portion.value == '') {
         portionError.innerHTML = "Error, Portion Must be Between [0.1,3](KG)";
         isError = true;
     }
