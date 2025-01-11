@@ -166,47 +166,15 @@
             </div>
         </div>
     </div>
-    <!-- <div class="content" style="padding-top: 5%;"> 
-    <div class="form-container">
-        <h1>Drop us a Message</h1>
-        <p>We will respond as fast as possible</p>
-        <form id="contact_form" name="contact_form" onsubmit="return validateForm()">
-          
-            <input type="email" name="email" id="email" placeholder="Email"><span id="email_error" class="error"></span>
-            <input type="text" name="fname" id="fname" placeholder="First Name"><span id="fname_error"
-                class="error"></span>
-            <input type="text" name="lname" id="lname" placeholder="Last Name"><span id="lname_error"
-                class="error"></span>
-            <span id="purpose_error" class="error"></span>
-            <select name="purpose" id="purpose">
-                <option value="" disabled selected>Purpose</option>
-                <option value="1">Technical Issues</option>
-                <option value="2">General Purpose</option>
-                <option value="3">Recipe Suggestion</option>
-            </select>
-            <textarea id="extracomments" name="comments" placeholder="Extra Comments"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <div class="image-container">
-        <img src="../images/contactus.png" alt="Contact Us" class="responsive-image">
-        <ul style="list-style: none;">
-            <li>Creators:</li>
-            <li>Qatada Azzeh <a href="mailto:202311042@students.asu.edu.jo">202311042@students.asu.edu.jo</a></li>
-            <li>Nour Hawwash <a href="mailto:202312175@students.asu.edu.jo">202312175@students.asu.edu.jo</a></li>
-            <li>Khaled Mafarjeh <a href="mailto:202310257@students.asu.edu.jo">202310257@students.asu.edu.jo</a>
-            </li>
-        </ul>
-    </div>
-    </div>
+
 
     <footer>
         <div class="footer-container">
-            <div class="footer-logo"> 
+            <div class="footer-logo">
                 <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
-           
+
             </div>
-            <div class="footer-links"> <
+            <div class="footer-links">
                 <h5>Links</h5>
                 <a href="/">Home</a>
                 <a href="/Aboutus/aboutus.html">About us</a>
@@ -214,7 +182,7 @@
                 <a href="/reviews/index.html">Reviews</a>
                 <a href="#">Contact</a>
             </div>
-            <div class="social-links"> 
+            <div class="social-links">
                 <h5>Social</h5>
                 <a href="https://www.instagram.com/">Instagram</a>
                 <a href="https://x.com/">X</a>
@@ -224,17 +192,33 @@
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of what's new and exciting from us.</p>
                 <form name="newsletterForm" id="newsletterForm">
-               
+
                     <input name="email" type="email" id="newsletter1" placeholder="Email address" required>
-                   
+
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
-        <div class="footer-bottom"> 
+        <div class="footer-bottom">
             <p>© 2024 Cooking Masters, Inc. All rights reserved.</p>
         </div>
-    </footer> -->
+    </footer>
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Email Was Sent You will hear from us soon</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

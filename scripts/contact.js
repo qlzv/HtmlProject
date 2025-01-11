@@ -49,5 +49,7 @@ if(purpose.selectedIndex == 0){
     hasError = true
 }
 
-
+if(!hasError){
+    const myModal = new bootstrap.Modal(document.getElementById('modal')).show()
+}
 }
