@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Cooking Master - Contact</title>
+    <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5FFC2 !important;
+        }
+
+        nav {
+            background-color: #808C44 !important;
+
+        }
+
+        .nav-link {
+            color: #d4d4d4;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-link.active {
+            color: #fff !important;
+        }
+
+        .resources {
+            background-color: #AFC058;
+            color: #000;
+            border-radius: 30px;
+            font-weight: bold;
+            padding: 10px 15px;
+            font-size: 0.8em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .resources:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .offcanvas {
+            background-color: #808C44 !important;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+            </a>
+            <li class="nav-item mt-3" style="list-style: none;">
+                <p class="" id="time"></p>
+            </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="../images/LOGO.png" alt="Logo" width="90" height="50">
+                        Cooking Masters
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 mt-1 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Aboutus/aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Recipes/index.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reviews/index.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <script>
+                        function updateTime() {
+                            var currentTime = new Date();
+                            var hours = currentTime.getHours();
+                            var minutes = currentTime.getMinutes();
+                            var seconds = currentTime.getSeconds();
+                            var timeOfDay = "AM";
+                            if (hours > 12) {
+                                hours = hours - 12;
+                                timeOfDay = "PM";
+                            }
+                            if (hours == 0) {
+                                hours = 12;
+                            }
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+                            var currentTimeString = hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
+                            document.getElementById("time").innerHTML = currentTimeString;
+                        }
+                        updateTime();
+                        setInterval(updateTime, 1000);
+                    </script>
+                    <a href="/resources/index.html" class="btn resources my-auto">Resources</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mt-5"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mt-5 ">
+                <h1 class="fw-bolder">Our Calculator</h1>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 mx-auto">
+                    <form novalidate onsubmit="return validateForm()">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <div class="error" id="nameError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Gender</label>
+                            <br>
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                            <div class="error" id="genderError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="height" class="form-label fw-bold">Height</label>
+                            <input type="number" class="form-control" id="height" placeholder="Enter your height">
+                            <div class="error" id="heightError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="weight" class="form-label fw-bold">Weight</label>
+                            <input type="number" class="form-control" id="weight" placeholder="Enter your weight">
+                            <div class="error" id="weightError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label fw-bold">Age</label>
+                            <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                            <div class="error" id="ageError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipe" class="form-label fw-bold">Recipe</label>
+                            <select class="form-select form-select mb-3" id="recipe">
+                                <option selected disabled>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="error" id="recipeError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="portion" class="form-label fw-bold">Portion</label>
+                            <input type="number" class="form-control" id="portion" placeholder="Portion (grams)">
+                            <div class="error" id="portionError"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/calculator.js"></script>
+</body>
+
+</html>
