@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Masters-Home Page</title>
+    <link rel="shortcut icon" href="images/LOGO.png" type="image/png">
+    <style>
+       
+        body{
+            background-color: #f5ffc2;
+        }
+
+        nav {
+            background-color: #808C44;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-link:hover {
+      color: #d4d4d4;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+        .nav-link.active {
+      color: #fff !important;
+    }
+
+        .offcanvas {
+      background-color: #808C44 !important;
+    }   
+
+        nav .resources {
+            background-color: #AFC058;
+            color: #000;
+            border-radius: 30px;
+            padding: 5px 15px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.8em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav .resources:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .left {
+            margin-top: 50px;
+            font-size: 30px;
+            padding-top: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .right {
+            margin-top: 50px;
+            background-color: #808C44;
+            border-radius: 3%;
+            padding: 30px;
+        }
+
+        .boxes-header {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+            transition: ease-in 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box img {
+            width: 75%;
+            height: auto;
+            border-radius: 12px;
+           
+        }
+
+        /*.box h3 {
+            margin-top: 20px;
+            font-size: 25px;
+        }
+         */
+        
+        .box:hover {
+            border: 2px solid #808C44;
+        }
+
+        footer {
+            background-color: #808C44;
+            color: #e6e6e6;
+            padding: 20px;
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-container h5 {
+            margin-bottom: 10px;
+        }
+
+        footer .footer-links, .social-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer .footer-links a, .social-links a {
+            color: #e6e6e6;
+            text-decoration: none;
+            margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        footer .footer-links a:hover, .social-links a:hover {
+            color: #000;
+        }
+
+        footer .newsletter input {
+            padding: 10px;
+            margin-top: 5px;
+            width: 70%;
+        }
+
+        footer .newsletter button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        footer .newsletter button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        footer .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+        span.underline {
+            text-decoration: underline;
+        }
+    </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpeg" alt="Logo" width="90" height="50">
+            </a>
+            <li class="nav-item mt-3" style="list-style: none;">
+                <p class="" id="time"></p>
+              </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="logo.jpeg" alt="Logo" width="90" height="50">
+                        Cooking Masters
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 mt-1 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Aboutus/aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Recipes/index.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reviews/index.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <script>
+                        function updateTime() {
+                          var currentTime = new Date();
+                          var hours = currentTime.getHours();
+                          var minutes = currentTime.getMinutes();
+                          var seconds = currentTime.getSeconds();
+                          var timeOfDay = "AM";
+                          if (hours > 12) {
+                            hours = hours - 12;
+                            timeOfDay = "PM";
+                          }
+                          if (hours == 0) {
+                            hours = 12;
+                          }
+                          if (minutes < 10) {
+                            minutes = "0" + minutes;
+                          }
+                          if (seconds < 10) {
+                            seconds = "0" + seconds;
+                          }
+                          var currentTimeString = hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
+                          document.getElementById("time").innerHTML = currentTimeString;
+                        }
+                        updateTime();
+                        setInterval(updateTime, 1000);
+                      </script>
+    
+                    <a href="/resources/index.html" class="btn resources my-auto">Resources</a>
+                </div>
+            </div>
+        </div>
+    </nav> <!--end of navbar-->      
+
+    <!-- Upper Section -->
+<div class="container mt-5 pt-5 ">
+    <div class="row">
+        <div class="col-md-6 left">
+            <h1 style="font-weight: bolder;">Welcome To Cooking Masters!</h1>
+            <p>Welcome to Cooking Masters, your ultimate destination for exploring the rich and diverse world of traditional food recipes. Whether you're a seasoned cook or a beginner in the kitchen, our collection of authentic recipes will guide you through the culinary traditions that have been passed down for generations. From hearty comfort foods to flavorful delicacies, we celebrate the flavors of every culture. Join us on a delicious journey where we teach you how to prepare traditional dishes with love, care, and a touch of history. Let's bring the taste of tradition to your kitchen!</p>
+        </div>
+
+        <div class="col-md-6 right">
+            <img src="Home.jpeg" alt="description" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+
+<div class="boxes-header">
+    <h1 style="font-weight: bold">What We Do?</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <!-- Box 1 -->
+        <div class="col-md-4">
+            <div class="box">
+                <img src="TraditionalMeals.jpeg" alt="Traditional Meals" class="img-fluid">
+                <h3>Traditional Meals</h3>
+                <p>Traditional Meals: Explore the authentic flavors and cultural significance of our traditional meals.</p>
+            </div>
+        </div>
+
+       <!-- Box 2 -->
+       <div class="col-md-4">
+        <div class="box">
+            <img src="Learn how to cook.jpeg" alt="Learn How to Cook!" class="img-fluid">
+            <h3>Learn How to Cook!</h3>
+            <p>Learn the art of cooking with our easy-to-follow recipes and step-by-step guides.</p>
+        </div>
+    </div>
+
+        <!-- Box 3 -->
+        <div class="col-md-4">
+            <div class="box">
+                <img src="Its simple.jpeg" alt="It's Simple" class="img-fluid">
+                <h3>It's Simple</h3>
+                <p>Our simple recipes are perfect for beginners and anyone looking for easy cooking solutions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer> <!-- Footer tag -->
+    <div class="footer-container"> <!-- Footer-container that hold logo and links and newsletter -->
+        <div class="footer-logo"> <!-- Footer-logo that hold the logo -->
+            <img src="logo.jpeg" alt="Logo" width="90" height="50"> <!-- Logo image with width and height of 90x50 -->
+        </div>
+
+        <div class="footer-links"> <!-- Footer-links that hold links -->
+            <h5>Links</h5>
+            <a href="/">Home</a>
+            <a href="Aboutus/aboutus.html">About us</a>
+            <a href="Recipes/index.html">Recipes</a>
+            <a href="reviews/index.html">Reviews</a>
+            <a href="contact/index.html">Contact</a>
+        </div>
+
+        <div class="social-links"> <!-- Social-links that hold social links -->
+            <h5>Social</h5>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://x.com/">X</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+
+        <div class="newsletter"> <!-- Newsletter that hold the newsletter form -->
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+       <form name="newsletterForm" id="newsletterForm"> <!-- Form for the newsletter tthe default method is GET -->
+        <input name="email" type="email" id="newsletter1" placeholder="Email address" required> <!-- Input email it's required -->
+        <button type="submit">Subscribe</button>
+       </form>
+        </div>
+
+    </div>
+    <div class="footer-bottom"> <!-- Footer-bottom that hold the copy right -->
+        <p>© 2024 Cooking Masters. All rights reserved.</p>
+         </div>
+    </footer>
+
+</body>
+</html>
