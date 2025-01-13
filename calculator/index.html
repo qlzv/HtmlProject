@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Cooking Master - Contact</title>
+    <title>Cooking Master - Calculator</title>
     <link rel="shortcut icon" href="../images/LOGO.png" type="image/png">
     <style>
         body {
@@ -92,7 +92,7 @@
                             <a class="nav-link" href="/reviews/index.html">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contact</a>
+                            <a class="nav-link" href="/contact/index.html">Contact</a>
                         </li>
                     </ul>
 
@@ -123,7 +123,7 @@
                         setInterval(updateTime, 1000);
                     </script>
                     <a href="/resources/index.html" class="btn resources my-auto">Resources</a>
-
+                    <a href="#" class="btn resources my-auto ms-3">Calculator</a>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
                 <h1 class="fw-bolder">Our Calculator</h1>
             </div>
             <div class="row mt-3">
-                <div class="col-4 mx-auto">
+                <div class="col-6 mx-auto">
                     <form novalidate onsubmit="return validateForm()">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-bold">Name</label>
@@ -157,12 +157,13 @@
                         </div>
                         <div class="mb-3">
                             <label for="height" class="form-label fw-bold">Height</label>
-                            <input type="number" class="form-control" id="height" placeholder="Enter your height">
+                            <input type="number" class="form-control" id="height"
+                                placeholder="Enter your height (meters)">
                             <div class="error" id="heightError"></div>
                         </div>
                         <div class="mb-3">
                             <label for="weight" class="form-label fw-bold">Weight</label>
-                            <input type="number" class="form-control" id="weight" placeholder="Enter your weight">
+                            <input type="number" class="form-control" id="weight" placeholder="Enter your weight (kg)">
                             <div class="error" id="weightError"></div>
                         </div>
                         <div class="mb-3">
@@ -173,10 +174,9 @@
                         <div class="mb-3">
                             <label for="recipe" class="form-label fw-bold">Recipe</label>
                             <select class="form-select form-select mb-3" id="recipe">
-                                <option selected disabled>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option selected disabled>Select</option>
+                                <option value="1">Mansaf</option>
+                                <option value="1">Kabasa</option>
                             </select>
                             <div class="error" id="recipeError"></div>
                         </div>
@@ -185,8 +185,19 @@
                             <input type="number" class="form-control" id="portion" placeholder="Portion (grams)">
                             <div class="error" id="portionError"></div>
                         </div>
+                        <div class="mb-3">
+                            <label for="results" class="form-label fw-bold">Results</label>
+                            <div id="results">
+                                <p id="consumedcalo"></p>
+                                <p id="expweight"></p>
+                                <p id="bmr"></p>
+                                <p id="timeburn"></p>
+                            </div>
+
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+
                 </div>
             </div>
         </div>

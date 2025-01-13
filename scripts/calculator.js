@@ -1,3 +1,4 @@
+const RecipesCaloriesPerOneGram = [1.85, 1.61];
 function containNumbers(text) {
     for (i = 0; i < text.length; i++) {
         if (text[i] > '0' && text[i] < '9') {
@@ -7,6 +8,12 @@ function containNumbers(text) {
     return false;
 }
 
+function formatTime(value) {
+    let hours = parseInt(value);
+    let minutes = (value - hours) * 60;
+    minutes = parseInt(minutes);
+    return hours + ":" + minutes;
+}
 function validateForm() {
     event.preventDefault();
     const name = document.getElementById("name");
@@ -62,13 +69,26 @@ function validateForm() {
         recipeError.innerHTML = "Error, You Must Select Reecipe";
         isError = true;
     }
-    if (parseFloat(portion.value) <= 0 || parseFloat(portion.value) > 3 || portion.value == '') {
-        portionError.innerHTML = "Error, Portion Must be Between [0.1,3](KG)";
+    if (parseFloat(portion.value) <= 0 || parseFloat(portion.value) > 3000.0 || portion.value == '') {
+        portionError.innerHTML = "Error, Portion Must be Between [0.1,3000](GRAM)";
         isError = true;
     }
     if (isError) return;
+    const RunRatio = 3.5;
+    const ConsumedCalaories = RecipesCaloriesPerOneGram[recipe.selectedIndex - 1] * parseFloat(portion.value);
+    const DeltaWeight = ConsumedCalaories / 7700;
+    const newWeight = parseFloat(weight.value) + DeltaWeight;
+    let newBMR;
+    if (gender == 'male') {
+        newBMR = 10 * newWeight + 6.25 * parseFloat(height.value) - 5 * parseInt(age.value) + 5;
+    } else {
+        newBMR = 10 * newWeight + 6.25 * parseFloat(height.value) - 5 * parseInt(age.value) - 12;
+    }
 
-
-
-
+    const BurnPerHour = RunRatio * parseFloat(weight.value);
+    const TimeToBurn = ConsumedCalaories / BurnPerHour;
+    document.getElementById("consumedcalo").innerHTML = "Consumed Calories : " + "<strong>" + ConsumedCalaories + "</strong>";
+    document.getElementById("expweight").innerHTML = "Expected Weight : " + "<strong>" + newWeight + "</strong>";
+    document.getElementById("bmr").innerHTML = "BMR : " + "<strong>" + newBMR + "</strong>";
+    document.getElementById("timeburn").innerHTML = "Time to Burn : " + "<strong>" + formatTime(TimeToBurn) + "</strong>";
 }
