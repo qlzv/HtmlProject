@@ -238,7 +238,7 @@
         
         <div class="col-md-6">
             <div>
-                <img src="ourStory.jpeg" alt="Our Story" width="650px" height="600px"> 
+                <img src="ourStory.jpeg" alt="Our Story" class="img-fluid" width="650px" height="600px"> 
             </div>
         </div> <!--col closing tag-->
     </div> 
@@ -248,7 +248,7 @@
     <div class="col-md-6">
         <div class="row img-text-2">
             <div>
-                <img src="ourMission.jpeg" alt="Our Mission" width="650px" height="500px">
+                <img src="ourMission.jpeg" alt="Our Mission" class="img-fluid" width="650px" height="500px">
             </div> <!-- img -->
         </div> <!-- img-text-2 -->
     </div> <!-- col-md-6 closing tag-->
