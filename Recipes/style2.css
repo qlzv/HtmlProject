@@ -16,55 +16,6 @@ a {
   color: #fff;
 }
 
-nav {
-  background-color: #808C44;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav .nav-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-nav .nav-links {
-  display: flex;
-  gap: 80px;
-  margin: 0 auto;
-}
-
-nav .nav-links a {
-  color: #d4d4d4;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav .nav-links a:hover {
-  color: #000;
-}
-
-nav .nav-links a.active {
-  color: #fff;
-}
-
-nav .resources {
-  background-color: #AFC058;
-  color: #000;
-  border-radius: 30px;
-  padding: 5px 15px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 0.8em;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-nav .resources:hover {
-  background-color: #000;
-  color: #fff;
-}
 
 .hero {
   text-align: center;
