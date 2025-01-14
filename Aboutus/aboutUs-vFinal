@@ -60,26 +60,28 @@
         justify-content: space-between;
         margin-bottom: 10px; 
         margin-left: 50px !important;
-        font-size: 22px;
+        font-size: 26px;
         font-weight: bold;
     }
 
     .img-text img {
         margin-left: 60px; 
         margin-top: 40px; 
+        height: auto;
     }
 
     .text-2{
         display: flex;
-        font-size: 22px;
+        font-size: 30px;
         flex-direction: row-reverse;
-        margin-left: 0px; 
         font-weight: bold;
+        margin-left: 0px;
     }
 
     .img-text-2 img{
-        margin-left: 30px;
-        margin-bottom: 70px;
+        margin-left: 50px;
+        height: auto;
+        max-height: 75%;
     } 
 
     footer {
@@ -238,7 +240,7 @@
         
         <div class="col-md-6">
             <div>
-                <img src="ourStory.jpeg" alt="Our Story" class="img-fluid" width="650px" height="600px"> 
+                <img src="ourStory.jpeg" alt="Our Story" width="650px" class="img-fluid"> 
             </div>
         </div> <!--col closing tag-->
     </div> 
@@ -248,7 +250,7 @@
     <div class="col-md-6">
         <div class="row img-text-2">
             <div>
-                <img src="ourMission.jpeg" alt="Our Mission" class="img-fluid" width="650px" height="500px">
+                <img src="ourMission.jpeg" alt="Our Mission" width="650px" class="img-fluid">
             </div> <!-- img -->
         </div> <!-- img-text-2 -->
     </div> <!-- col-md-6 closing tag-->
